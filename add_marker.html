@@ -32,11 +32,13 @@
         title: 'Hello World!'
       });
 
-      var newMarker = new google.maps.Marker({
+      var myMarker = new google.maps.Marker({
         position: myLatLng, 
-        title: 'Vancouver' 
+        title: 'Vancouver', 
+        animation: google.maps.Animation.DROP, 
+        draggable: true
       });
-      newMarker.setMap(map); 
+      myMarker.setMap(map); 
     }
     
   </script>
